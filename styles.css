@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --light-grey: rgb(131, 131, 131);
+  --light-orange: #f9961f;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Noto Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 250px;
+}
+
+.main-container {
+  flex: 1;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  font-size: 16px;
+}
+
+/* Helper classes */
+
+.error {
+  border: 1px solid red !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.disbled-button {
+  cursor: not-allowed !important;
+  opacity: 0.7;
+  color: grey !important;
+}
+
+.disbled-input {
+  cursor: not-allowed !important;
+  opacity: 0.7;
+}
+
+.success {
+  border: 1px solid greenyellow !important;
+}
+
+/*  */
+
+.form-heading-container {
+  padding: 0px 24px;
+}
+
+.form-heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100vw;
+  max-width: 1200px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.input-section-parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.personal-info-input-section,
+.academic-details-input-section,
+.registration-district-state-input-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 50px;
+}
+
+.other-info-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-and-label-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.input-and-label-container label {
+  font-size: 16px;
+}
+
+.input-and-label-container input {
+  height: 36px;
+  border: 1px solid rgb(173, 172, 172);
+  cursor: pointer;
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Noto Sans";
+}
+
+.input-and-label-container input[type="date"] {
+  padding: 4px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.input-and-label-container input[type="file"] {
+  padding: 4px;
+  height: 36px;
+}
+
+.optionsField {
+  display: flex;
+}
+
+.input-and-label-container span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.input-and-label-container input[type="radio"] {
+  padding: 4px;
+  height: 36px;
+  margin-left: 10px;
+  transform: scale(1.3);
+}
+
+.input-and-label-container input[type="checkbox"] {
+  padding: 4px;
+  height: 36px;
+  margin-left: 10px;
+  transform: scale(1.3);
+}
+
+
+.input-and-label-container select {
+  height: 36px;
+  border: 1px solid rgb(173, 172, 172);
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+option {
+  font-size: 16px;
+  font-family: "Noto Sans";
+}
+
+.input-section-heading {
+  font-size: 26px;
+  color: var(--light-orange);
+}
+
+.declaration-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.declaration-top-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.declaration-heading {
+  font-size: 18px;
+}
+
+.declaration-content,
+.acknowledgement {
+  font-size: 16px;
+  color: var(--light-grey);
+}
+
+.declaration-input-section {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.declaration-input-section label {
+  cursor: pointer;
+}
+
+.submit-buttom-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-and-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-heading {
+  color: red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.submit-button {
+  max-width: 200px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--light-orange);
+  color: #fff;
+}
+
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.input-and-send-button-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.input-and-send-button-container input {
+  width: 100%;
+}
+
+.input-and-verify-button-container {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+/* .input-and-verify-button-container input {
+  width: 100%;
+} */
+
+.verify-button {
+  border: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: fit-content;
+}
+
+/* .verify-button:hover {
+  color: var(--light-orange);
+} */
+
+/* loading screen styles */
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  width: 100%;
+}
+
+.loading-img {
+  width: 100px;
+}
+
+/*  */
+
+/* Form submitted screen styles */
+.submitted-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 769px;
+  margin: auto;
+}
+
+.form-submition-heading-container {
+  padding: 8px;
+}
+
+.submition-message-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--light-orange);
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-submition-message {
+  text-align: center;
+}
+
+/*  */
+
+/* For making html date selection more user friendly */
+
+.input-and-label-container input[type="date"] {
+  outline: 0;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+
+.input-and-label-container
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: transparent;
+  bottom: 0;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+/*  */
+
+/* OPT fields classes */
+
+.opt-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*  */
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 80vw;
+  }
+
+  .personal-info-input-section,
+  .academic-details-input-section,
+  .registration-district-state-input-section {
+    grid-template-columns: 1fr;
+  }
+
+  .form-heading {
+    font-size: 24px;
+  }
+
+  .input-section-heading {
+    font-size: 20px;
+  }
+
+  .main-container {
+    padding: 0px;
+  }
+
+  .form-container {
+    padding: 16px;
+    border: 0px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .submition-message-heading {
+    font-size: 24px;
+  }
+
+  .submitted-form-container {
+    border: 0px;
+  }
+}

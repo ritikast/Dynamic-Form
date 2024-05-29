@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="form-heading-container">
+        <p class="form-heading" id="form-heading"></p>
+      </div>
+      <div class="form-heading-container">
+        <p id="form-description"></p>
+      </div>
+      <form class="form-container" id="dynamic-form">
+        <div class="input-section-parent-container">
+          <div id="dynamicFields" class="personal-info-input-section">
+            <!-- Dynamic fields will be added here -->
+          </div>
+        </div>
+        <div class="submit-buttom-container">
+          <p class="error-message" id="submit-error-message"></p>
+          <button type="submit" class="submit-button" id="submitBtn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
